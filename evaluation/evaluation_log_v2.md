@@ -162,6 +162,24 @@
 | v2 | Planned: Add few-shot examples | TBD |
 | v3 | Planned: Add confidence indicators per field | TBD |
 
+## Automated Evaluation Script
+
+| Metric | Value |
+|--------|-------|
+| Script type | Automated — runs all docs in one command |
+| Judge | LLM-as-a-Judge (Claude Haiku) for semantic accuracy |
+| HS code handling | Individual code matching |
+| Format handling | Ignores currency symbols and comma formatting |
+| Average extraction time | ~20 seconds per document |
+
+## Final Results — Prompt v2 with Automated Evaluation
+
+| Document | Fields Correct | Accuracy |
+|----------|---------------|----------|
+| synthetic_invoice_001.pdf | 10/10 | 100% |
+| synthetic_invoice_002_COL_SLV.pdf | 10/10 | 100% |
+| synthetic_invoice_003_MEX_GTM.pdf | 10/10 | 100% |
+| **OVERALL** | **30/30** | **100%** |
 ---
 
 ## Dataset Progress
